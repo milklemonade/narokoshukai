@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import ClickCounter from './ClickCounter.vue'
+import ItemList from './ItemList.vue'
+import TodoList from './TodoList.vue'
 defineProps<{
   msg: string
 }>()
@@ -7,6 +10,9 @@ defineProps<{
 <template>
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
+    <ClickCounter />
+    <ItemList />
+    <TodoList />
     <h3>
       You’ve successfully created a project with
       <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> +
